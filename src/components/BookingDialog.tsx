@@ -150,7 +150,7 @@ export default function BookingDialog({
       <DialogTrigger className={triggerCls}>
         {children ?? "Reserva Clase de Prueba"}
       </DialogTrigger>
-      <DialogContent className="max-w-lg border-border bg-surface text-foreground sm:rounded-none">
+      <DialogContent className="max-w-2xl border-border bg-surface text-foreground sm:rounded-none">
         <DialogHeader>
           <DialogTitle className="font-display text-3xl uppercase tracking-tight">
             Reserva tu <span className="text-primary">clase de prueba</span>

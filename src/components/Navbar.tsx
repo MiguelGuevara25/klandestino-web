@@ -17,8 +17,11 @@ export default function Navbar() {
         <a href="#dojo" className="transition-colors hover:text-primary">
           El Dojo
         </a>
-        <a href="#testimonios" className="transition-colors hover:text-primary">
-          Alumnos
+        <a href="#galeria" className="transition-colors hover:text-primary">
+          Galería
+        </a>
+        <a href="#logros" className="transition-colors hover:text-primary">
+          Logros
         </a>
         <a href="#contacto" className="border-b border-primary text-primary">
           Prueba Gratis
