@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { wspUrl } from "../data";
 import Wsp from "../assets/svg/Wsp";
 
@@ -35,7 +34,6 @@ export default function Navbar() {
         rel="noreferrer"
         className="md:hidden text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-2 text-primary-foreground bg-accent px-5 py-2"
       >
-        {/* <Button>Prueba Gratis</Button> */}
         <Wsp />
         Whatsapp
       </a>
