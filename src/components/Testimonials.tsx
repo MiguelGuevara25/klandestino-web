@@ -2,8 +2,8 @@ export default function Testimonials() {
   const items = [
     {
       q: "Llegué buscando un gimnasio y encontré una familia. Las clases son técnicas, intensas y siempre con respeto.",
-      n: "Diego R.",
-      r: "Cinturón azul · 2 años",
+      n: "Andres T.",
+      r: "Cinturón Blanco · 1 año",
     },
     {
       q: "Mi hijo entró tímido y ahora es seguro de sí mismo. La clase de kids cambió su vida.",
@@ -12,8 +12,8 @@ export default function Testimonials() {
     },
     {
       q: "El nivel técnico es real. He rolado en varias academias de Lima y Klandestino te exige a otro nivel.",
-      n: "Jhonatan P.",
-      r: "Cinturón morado · 4 años",
+      n: "Luciano P.",
+      r: "Cinturón morado · 6 años",
     },
   ];
 

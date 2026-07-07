@@ -23,7 +23,7 @@ import { es } from "date-fns/locale";
 import { CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 
-const WHATSAPP_PHONE = "51900000000";
+const WHATSAPP_PHONE = "51994306320";
 
 const SLOTS: Record<
   Program,

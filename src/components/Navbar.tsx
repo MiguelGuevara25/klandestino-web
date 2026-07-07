@@ -1,6 +1,6 @@
 export default function Navbar() {
   const WHATSAPP_URL =
-    "https://wa.me/51900000000?text=Hola%20Klandestino%2C%20quiero%20reservar%20mi%20clase%20de%20prueba";
+    "https://wa.me/51994306320?text=Hola%20Klandestino%2C%20quiero%20reservar%20mi%20clase%20de%20prueba";
 
   return (
     <nav className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-border bg-background/80 px-6 py-4 backdrop-blur-md">
