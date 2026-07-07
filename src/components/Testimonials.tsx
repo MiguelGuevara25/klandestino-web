@@ -1,22 +1,6 @@
-export default function Testimonials() {
-  const items = [
-    {
-      q: "Llegué buscando un gimnasio y encontré una familia. Las clases son técnicas, intensas y siempre con respeto.",
-      n: "Andres T.",
-      r: "Cinturón Blanco · 1 año",
-    },
-    {
-      q: "Mi hijo entró tímido y ahora es seguro de sí mismo. La clase de kids cambió su vida.",
-      n: "Carla M.",
-      r: "Mamá de alumno kids",
-    },
-    {
-      q: "El nivel técnico es real. He rolado en varias academias de Lima y Klandestino te exige a otro nivel.",
-      n: "Luciano P.",
-      r: "Cinturón morado · 6 años",
-    },
-  ];
+import { testimonials } from "../data";
 
+export default function Testimonials() {
   return (
     <section
       id="testimonios"
@@ -27,21 +11,21 @@ export default function Testimonials() {
           Voces del <span className="text-primary">Tatami</span>
         </h2>
         <div className="grid gap-px bg-border md:grid-cols-3">
-          {items.map((t) => (
+          {testimonials.map(({ n, q, r }) => (
             <figure
-              key={t.n}
+              key={n}
               className="flex flex-col justify-between bg-background p-8"
             >
               <blockquote className="mb-8 text-pretty leading-relaxed">
                 <span className="mr-1 font-display text-3xl text-primary">
                   &quot;
                 </span>
-                {t.q}
+                {q}
               </blockquote>
               <figcaption>
-                <div className="font-bold uppercase tracking-wide">{t.n}</div>
+                <div className="font-bold uppercase tracking-wide">{n}</div>
                 <div className="text-xs uppercase tracking-[0.2em] text-muted">
-                  {t.r}
+                  {r}
                 </div>
               </figcaption>
             </figure>

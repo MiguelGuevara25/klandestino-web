@@ -22,8 +22,7 @@ import { format } from "date-fns";
 import { es } from "date-fns/locale";
 import { CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
-
-const WHATSAPP_PHONE = "51994306320";
+import { wspNumber } from "../data";
 
 const SLOTS: Record<
   Program,
@@ -130,7 +129,7 @@ export default function BookingDialog({
       `• Fecha: ${fechaTxt}`,
     ];
     if (d.notes) lines.push(`• Nota: ${d.notes}`);
-    const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(lines.join("\n"))}`;
+    const url = `https://wa.me/${wspNumber}?text=${encodeURIComponent(lines.join("\n"))}`;
     window.open(url, "_blank", "noopener,noreferrer");
     
     setSubmitting(false);

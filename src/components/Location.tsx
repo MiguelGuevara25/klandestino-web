@@ -1,12 +1,7 @@
+import { MAPS_EMBED, MAPS_LINK } from "../data";
 import BookingDialog from "./BookingDialog";
 
 export default function Location() {
-  const ADDRESS =
-    "Sector II Grupo 10 Mz H Lote 10, Villa el Salvador, Lima, Perú";
-  const MAPS_QUERY = encodeURIComponent(ADDRESS);
-  const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${MAPS_QUERY}`;
-  const MAPS_EMBED = `https://www.google.com/maps?q=${MAPS_QUERY}&output=embed`;
-
   return (
     <section
       id="contacto"
@@ -29,7 +24,9 @@ export default function Location() {
             </p>
           </address>
           <div className="flex flex-col gap-4">
-            <BookingDialog variant="dark">Reserva tu Clase de Prueba</BookingDialog>
+            <BookingDialog variant="dark">
+              Reserva tu Clase de Prueba
+            </BookingDialog>
             <a
               href={MAPS_LINK}
               target="_blank"

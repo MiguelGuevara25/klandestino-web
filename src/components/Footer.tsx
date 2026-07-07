@@ -1,10 +1,14 @@
 import Instagram from "../assets/svg/Instagram";
 import Tiktok from "../assets/svg/Tiktok";
 import Wsp from "../assets/svg/Wsp";
+import { wspUrl } from "../data";
 
 export default function Footer() {
-  const WHATSAPP_URL =
-    "https://wa.me/51994306320?text=Hola%20Klandestino%2C%20quiero%20reservar%20mi%20clase%20de%20prueba";
+  const socialMedia = [
+    { l: <Instagram />, h: "https://www.instagram.com/klandestinojj/" },
+    { l: <Tiktok />, h: "https://www.tiktok.com/@klandestino.jiu.j" },
+    { l: <Wsp />, h: wspUrl },
+  ];
 
   return (
     <footer>
@@ -13,11 +17,7 @@ export default function Footer() {
           Klandestino © 2026
         </div>
         <div className="flex gap-4">
-          {[
-            { l: <Instagram />, h: "https://www.instagram.com/klandestinojj/" },
-            { l: <Tiktok />, h: "https://www.tiktok.com/@klandestino.jiu.j" },
-            { l: <Wsp />, h: WHATSAPP_URL },
-          ].map((s) => (
+          {socialMedia.map((s) => (
             <a
               key={s.h}
               href={s.h}

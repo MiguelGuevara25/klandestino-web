@@ -1,11 +1,6 @@
+import { wins } from "../data";
+
 export default function Achievements() {
-  const wins = [
-    { y: "2024", t: "Copa Lima Open", r: "3 medallas de oro · 2 de plata" },
-    { y: "2024", t: "Sudamericano IBJJF", r: "Bronce categoría adulto azul" },
-    { y: "2023", t: "Copa Perú No-Gi", r: "Equipo subcampeón general" },
-    { y: "2023", t: "Torneo Interbarrios VES", r: "Campeones por equipos" },
-    { y: "2022", t: "Open Lima Sur", r: "Oro absoluto masculino" },
-  ];
   return (
     <section
       id="logros"
@@ -39,19 +34,19 @@ export default function Achievements() {
         </div>
 
         <ol className="mt-10 divide-y divide-border border-y border-border">
-          {wins.map((w) => (
+          {wins.map(({ y, t, r }) => (
             <li
-              key={w.t}
+              key={t}
               className="grid grid-cols-12 items-baseline gap-4 py-6 transition-colors hover:bg-background"
             >
               <span className="col-span-2 font-mono text-xs text-primary md:text-sm">
-                {w.y}
+                {y}
               </span>
               <span className="col-span-10 font-display text-xl uppercase tracking-tight md:col-span-5 md:text-2xl">
-                {w.t}
+                {t}
               </span>
               <span className="col-span-12 text-sm text-muted md:col-span-5 md:text-right">
-                {w.r}
+                {r}
               </span>
             </li>
           ))}

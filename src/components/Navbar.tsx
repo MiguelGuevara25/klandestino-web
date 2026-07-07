@@ -1,7 +1,8 @@
-export default function Navbar() {
-  const WHATSAPP_URL =
-    "https://wa.me/51994306320?text=Hola%20Klandestino%2C%20quiero%20reservar%20mi%20clase%20de%20prueba";
+import { Button } from "@/components/ui/button";
+import { wspUrl } from "../data";
+import Wsp from "../assets/svg/Wsp";
 
+export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-border bg-background/80 px-6 py-4 backdrop-blur-md">
       <a
@@ -27,13 +28,16 @@ export default function Navbar() {
           Prueba Gratis
         </a>
       </div>
+
       <a
-        href={WHATSAPP_URL}
+        href={wspUrl}
         target="_blank"
         rel="noreferrer"
-        className="md:hidden text-[10px] font-bold uppercase tracking-[0.2em] text-primary"
+        className="md:hidden text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-2 text-primary-foreground bg-accent px-5 py-2"
       >
-        WhatsApp
+        {/* <Button>Prueba Gratis</Button> */}
+        <Wsp />
+        Whatsapp
       </a>
     </nav>
   );
